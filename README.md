@@ -21,7 +21,7 @@ The framework uses Dependency Injection to decouple components:
 │                  (Problem-Agnostic)                     │
 └────────────┬────────────┬────────────┬──────────────────┘
              │            │            │
-    ┌────────▼──────┐ ┌──▼──────────┐ ┌▼────────────────┐
+    ┌────────▼──────┐ ┌───▼─────────┐ ┌▼────────────────┐
     │   Problem     │ │  Frontier   │ │   Strategy      │
     │  (What to     │ │ (How to     │ │ (What order     │
     │   solve)      │ │  store)     │ │  to expand)     │
@@ -87,14 +87,14 @@ Provides domain knowledge for informed search:
 
 ```bash
 # Option 1: Install directly from git (recommended)
-pip install git+https://github.com/andrea-difelice/pathfinding-framework.git
+pip install git+https://github.com/andrea-00/path-finding-framework.git
 
 # Option 2: Install with benchmark dependencies
-pip install "git+https://github.com/andrea-difelice/pathfinding-framework.git#egg=pathfinding-framework[benchmark]"
+pip install "git+https://github.com/andrea-00/path-finding-framework.git#egg=path-finding-framework[benchmark]"
 
 # Option 3: Clone and install locally
-git clone https://github.com/andrea-difelice/pathfinding-framework.git
-cd pathfinding-framework
+git clone https://github.com/andrea-00/path-finding-framework.git
+cd path-finding-framework
 pip install .
 
 # Option 4: Install in development mode (for contributing)
@@ -105,7 +105,7 @@ pip install -e ".[dev]"
 
 ```bash
 # Install with benchmark dependencies
-pip install "git+https://github.com/andrea-difelice/pathfinding-framework.git#egg=pathfinding-framework[benchmark]"
+pip install "git+https://github.com/andrea-00/path-finding-framework.git#egg=path-finding-framework[benchmark]"
 
 # Or if cloned locally
 pip install ".[benchmark]"
